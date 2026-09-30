@@ -1,0 +1,68 @@
+{
+  "seed": 20261001,
+  "T_DUR": 30.0,
+  "N_TEST": 100,
+  "N_TEST_IDEAL": 32,
+  "N_ABL": 32,
+  "N_H": 20,
+  "selected_dictionary": {
+    "mismatch": "full",
+    "ideal": "full"
+  },
+  "pid_params": {
+    "kp_xy": 20.44991132981536,
+    "kd_xy": 7.574851966910865,
+    "kp_z": 18.749682174777938,
+    "kd_z": 5.600483487395646,
+    "kR": 0.9353203257973377,
+    "kw": 0.15264577331940443,
+    "w_alpha": 0.958351181999122,
+    "omega": 4.50263488653738
+  },
+  "pid_tuning": {
+    "default_score": 0.07049309501780485,
+    "best_score": 0.0621413401748801
+  },
+  "mpc": {
+    "phys": {
+      "qscale": 0.1,
+      "rscale": 10.0,
+      "omega": 3.0,
+      "score": 0.2582930031806981
+    },
+    "physlag": {
+      "qscale": 0.3,
+      "rscale": 10.0,
+      "omega": 6.0,
+      "score": 0.12946821237801678
+    },
+    "koop": {
+      "qscale": 1.0,
+      "rscale": 1.0,
+      "omega": 6.0,
+      "score": 0.2239131732167474
+    },
+    "koopstab": {
+      "qscale": 1.0,
+      "rscale": 10.0,
+      "omega": 6.0,
+      "score": 0.6907586275470193
+    },
+    "lqr_koopstab": {
+      "qscale": 0.3,
+      "rscale": 10.0,
+      "omega": 6.0,
+      "score": 0.4727455280523359
+    },
+    "lqr_koop": {
+      "qscale": 1.0,
+      "rscale": 10.0,
+      "omega": 3.0,
+      "score": 0.19684029264521785
+    }
+  },
+  "fail_err": 3.0,
+  "rmse_cap": 1.0,
+  "lambda_u": 0.001,
+  "dob_d_max": 5.0
+}
